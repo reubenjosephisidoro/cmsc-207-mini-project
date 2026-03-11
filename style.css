@@ -1,0 +1,427 @@
+/* Register NightSans as a custom font */
+@font-face {
+    font-family: 'NightSans';
+    src: url('fonts/NightSans-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Body */
+body {
+    font-family: 'NightSans', Arial, sans-serif;
+    background-color: #cccccc;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: white;
+    font-family: 'NightSans', Arial, sans-serif;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+.header-left img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+/* Right side (icons stacked above nav) */
+.header-right-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+}
+
+/* Top Row (Social Icons) */
+.header-top {
+    margin-top: -24px;
+    margin-right: 25px;
+}
+
+.header-top a img {
+    height: 18px;
+    width: 18px;
+    margin-left: 9px;
+}
+
+/* Bottom Row (Nav) */
+nav {
+    padding-right: 167px;
+    margin-top: 27px;
+}
+
+nav a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d5991;
+    text-decoration: none;
+    margin-left: 23px;
+    font-family: 'NightSans', Arial, sans-serif;
+}
+
+/* About Me Section */
+#about {
+    background-color: #042953;
+    padding: 60px 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Photo */
+.about-photo img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    padding: 30px 40px;
+}
+
+/* Text */
+.about-text {
+    margin-top: -35px;
+}
+
+.about-text h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.about-text p {
+    color: white;
+    line-height: 1.5;
+    font-size: 22px;
+}
+
+/* About Me Button */
+.btn-read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: white;
+    color: #2d5991;
+    text-decoration: none;
+    font-family: 'NightSans', Arial, sans-serif;
+}
+
+/* What I Do Section */
+#what-i-do {
+    background-color: white;
+    padding: 10px 40px 65px 40px;    
+    text-align: center;
+}
+
+#what-i-do h2 {
+    color: #042953;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Expertise Grid */
+.expertise-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual Card */
+.expertise-card {
+    background-color: #042953;
+    padding: 30px 20px;
+    width: 220px;
+    text-align: center;
+}
+
+.skill-icon img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 7px;
+}
+
+.expertise-card h3 {
+    color: #cccccc;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.expertise-card p {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.expertise-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 6px 15px;
+    background-color: #ed1c24;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'NightSans', Arial, sans-serif;
+}
+
+/* Hobbies & Interests Section */
+#hobbies {
+    position: relative;
+    background-color: #042953;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+#hobbies h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* Carousel Wrapper */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Individual Slide */
+.carousel-slide {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Show only active slide */
+.carousel-slide.active {
+    display: flex;
+}
+
+/* Text overlay on image */
+.slide-text {
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 30px 40px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.slide-text h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.slide-text p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify
+}
+
+/* Carousel Controls */
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: calc(50% + 40px);
+    transform: translateY(-50%);
+    background-color: #ed1c24;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.divider {
+    background-color: white;
+    height: 40px;
+    width: 100%;
+}
+
+/* Contact Section */
+#contact {
+    padding: 5px 40px 40px 40px;
+    background-color: #595959;
+}
+
+#contact h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#contact > p {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+/* Contact Grid: Form left, Options right */
+.contact-grid {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Left: Contact Form */
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 94%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-family: 'NightSans', Arial, sans-serif;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 15px;
+    /* font-weight: bold; */
+    font-family: 'NightSans', Arial, sans-serif;
+    border: none;
+    cursor: pointer;
+    background-color: #ed1c24;
+    color: white
+}
+
+/* Right: Contact Options */
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 0 0 300px;
+}
+
+.contact-call,
+.contact-chat, 
+.contact-social {
+    padding: 20px;
+    background-color: #042953;;
+}
+
+.contact-call h3,
+.contact-chat h3,
+.contact-social h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.contact-call p,
+.contact-chat p {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-chat a,
+.contact-social a {
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* Latest Post Fold */
+#blog {
+    padding: 45px 40px 70px 40px;
+    background-color: white;
+}
+
+#blog h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #a63636;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: flex;
+    gap: 30px;
+}
+
+/* Individual Card */
+.blog-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #a63636;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Text */
+.blog-card-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.blog-date {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.blog-card-text h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.blog-card-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.blog-card-text a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background-color: #042953;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'NightSans', Arial, sans-serif;
+    text-align: center;
+}
