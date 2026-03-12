@@ -106,9 +106,10 @@ nav a {
 
 /* About Me Button */
 .btn-read-more {
+    font-size: 18px;
     display: inline-block;
     margin-top: 10px;
-    padding: 10px 25px;
+    padding: 8px 17px;
     background-color: white;
     color: #2d5991;
     text-decoration: none;
@@ -193,24 +194,31 @@ nav a {
     width: 100%;
 }
 
+/* Carousel Track */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
 /* Individual Slide */
 .carousel-slide {
-    display: none;
+    min-width: 100%;
     background-size: cover;
     background-position: center;
     height: 450px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /* Show only active slide */
-.carousel-slide.active {
+/* .carousel-slide.active {
     display: flex;
-}
+} */
 
 /* Text overlay on image */
 .slide-text {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 30px 40px;
     max-width: 500px;
     text-align: left;
@@ -258,6 +266,26 @@ nav a {
     width: 100%;
 }
 
+/* Pagination dots for carousel */
+.carousel-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ed1c24;
+}
+
 /* Contact Section */
 #contact {
     padding: 5px 40px 40px 40px;
@@ -294,7 +322,7 @@ nav a {
 .contact-form input,
 .contact-form textarea {
     display: block;
-    width: 94%;
+    width: 91%;
     padding: 12px;
     margin-bottom: 15px;
     font-family: 'NightSans', Arial, sans-serif;
@@ -424,4 +452,35 @@ nav a {
     text-decoration: none;
     font-family: 'NightSans', Arial, sans-serif;
     text-align: center;
+}
+
+/* Three-line (hamburger) menu hidden by default */
+.hamburger {
+    display: none;
+}
+
+/* Media query show only on small-width screens like mobile */
+@media (max-width: 768px) {
+
+    /* Stack About Me photo above text */
+    #about {
+        flex-direction: column;
+    }
+
+    .about-photo img {
+        width: 100%;
+    }
+
+    /* Header: hide nav, show hamburger */
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: #2d5991;
+    }
+
 }

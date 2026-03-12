@@ -6,6 +6,7 @@
         <meta name="description" content="A brief summary of what this webpage is about.">
         <title>My Personal Web Profile</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     </head>
 
     <body>
@@ -44,6 +45,9 @@
                             <a href="#">Contact</a>
                         </nav>
                     </div>
+
+                    <!-- Appears when the screen decreases to a certain width -->
+                    <div class="hamburger">&#9776;</div>
 
                 </div>
 
@@ -138,60 +142,72 @@
                 <h2>Hobbies & Interests</h2>
 
                 <div class="carousel">
+                    <div class="carousel-track">
 
-                    <div class="carousel-slide active" style="background-image: url('images/cv.png');">
-                        <div class="slide-text">
-                            <h3>Computer Vision Experiments</h3>
-                            <p>
-                                I do computer vision experiments on the side, building small projects around 
-                                image processing and CNNs, trying my hand at tasks like object detection and segmentation. 
-                                It's challenging, but there's something deeply satisfying about teaching a machine to see.
-                            </p>
+                        <div class="carousel-slide active" style="background-image: url('images/cv.png');">
+                            <div class="slide-text">
+                                <h3>Computer Vision Experiments</h3>
+                                <p>
+                                    I do computer vision experiments on the side, building small projects around 
+                                    image processing and CNNs, trying my hand at tasks like object detection and segmentation. 
+                                    It's challenging, but there's something deeply satisfying about teaching a machine to see.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="carousel-slide" style="background-image: url('images/ml.png');">
-                        <div class="slide-text">
-                            <h3>Machine Learning Deep Dives</h3>
-                            <p>
-                                I tend to pick one concept and go deep, whether it's tracing through the calculus behind 
-                                backpropagation, building intuition for better visualizing loss landscapes, or getting 
-                                hands-on with tabular data preprocessing. Less breadth, more depth. That's how it sticks.
-                            </p>
+                        <div class="carousel-slide" style="background-image: url('images/ml.png');">
+                            <div class="slide-text">
+                                <h3>Machine Learning Deep Dives</h3>
+                                <p>
+                                    I tend to pick one concept and go deep, whether it's tracing through the calculus behind 
+                                    backpropagation, building intuition for better visualizing loss landscapes, or getting 
+                                    hands-on with tabular data preprocessing. Less breadth, more depth. That's how it sticks.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="carousel-slide" style="background-image: url('images/fitness.png');">
-                        <div class="slide-text">
-                            <h3>Exercise and Fitness</h3>
-                            <p>
-                                Mostly weightlifting and the occasional run. I've recently just got back to it but I've always 
-                                felt exercising keeps me grounded. it's the one part of the day that's entirely offline.
-                            </p>
+                        <div class="carousel-slide" style="background-image: url('images/fitness.png');">
+                            <div class="slide-text">
+                                <h3>Exercise and Fitness</h3>
+                                <p>
+                                    Mostly weightlifting and the occasional run. I've recently just got back to it but I've always 
+                                    felt exercising keeps me grounded. It's the one part of the day that's entirely offline.
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="carousel-slide" style="background-image: url('images/motorsports.png');">
-                        <div class="slide-text">
-                            <h3>Following Motorsports</h3>
-                            <p>
-                                F1, WEC, and NASCAR. I'm drawn to the engineering as much as the racing. The strategy, the margins, 
-                                and the obsessive pursuit of speed is inspiring. Motorsports is an expensive passion to take, but one day.</p>
+                        <div class="carousel-slide" style="background-image: url('images/motorsports.png');">
+                            <div class="slide-text">
+                                <h3>Following Motorsports</h3>
+                                <p>
+                                    F1, WEC, and NASCAR. I'm drawn to the engineering as much as the racing. The strategy, the margins, 
+                                    and the obsessive pursuit of speed is inspiring. Motorsports is an expensive passion to take, but one day.</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="carousel-slide" style="background-image: url('images/gaming.jpg');">
-                        <div class="slide-text">
-                            <h3>Single-Player Gaming</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="carousel-slide" style="background-image: url('images/gaming.png');">
+                            <div class="slide-text">
+                                <h3>Single-Player Gaming</h3>
+                                <p>I prefer single-player games on console or PC with strong narratives, deep mechanics, and good graphics, the kind that rewards 
+                                    exploration. It's one of the few hobbies where getting lost in the world and story is entirely the point.</p>
+                            </div>
                         </div>
+                        
                     </div>
-
                 </div>
 
                 <!-- Carousel Controls -->
-                <button class="carousel-prev">&#8592;</button>
-                <button class="carousel-next">&#8594;</button>
+                <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <!-- Pagination Dots -->
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
 
             </section>
 
@@ -215,7 +231,7 @@
                             <input type="text" placeholder="Your Name">
                             <input type="email" placeholder="Your Email">
                             <textarea placeholder="Your Message"></textarea>
-                            <button type="submit">CONTACT ME</button>
+                            <button type="button">CONTACT ME</button>
                         </form>
                     </div>
 
