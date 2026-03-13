@@ -76,7 +76,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* About Me Section */
+/* About Me section */
 #about {
     background-color: #042953;
     padding: 60px 40px;
@@ -110,7 +110,7 @@ nav a:hover {
     font-size: 22px;
 }
 
-/* About Me Button */
+/* About Me button */
 .btn-read-more {
     font-size: 18px;
     display: inline-block;
@@ -119,14 +119,16 @@ nav a:hover {
     background-color: white;
     color: #2d5991;
     text-decoration: none;
+    font-weight: bold;
     font-family: 'NightSans', Arial, sans-serif;
 }
 
+/* Change button color effect upon hover */
 .btn-read-more:hover {
     background-color: #e0e0e0;
 }
 
-/* What I Do Section */
+/* What I Do section */
 #what-i-do {
     background-color: white;
     padding: 10px 40px 65px 40px;    
@@ -146,7 +148,7 @@ nav a:hover {
     gap: 30px;
 }
 
-/* Individual Card */
+/* Individual cars in card row */
 .expertise-card {
     background-color: #042953;
     padding: 30px 20px;
@@ -174,6 +176,7 @@ nav a:hover {
     line-height: 1.6;
 }
 
+/* Expertise card "More" button */
 .expertise-card a {
     display: inline-block;
     margin-top: auto;
@@ -186,11 +189,12 @@ nav a:hover {
     align-self: center;
 }
 
+/* Button hover effect */
 .expertise-card a:hover {
     background-color: #c0392b;
 }
 
-/* Hobbies & Interests Section */
+/* Hobbies & Interests section */
 #hobbies {
     position: relative;
     background-color: #042953;
@@ -204,21 +208,21 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-/* Carousel Wrapper */
+/* Carousel wrapper */
 .carousel {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-/* Carousel Track */
+/* Hold all slides in a horizontal row */
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
     align-items: flex-start;
 }
 
-/* Individual Slide */
+/* Individual slide banner */
 .carousel-slide {
     min-width: 100%;
     background-size: cover;
@@ -259,7 +263,7 @@ nav a:hover {
     text-align: justify
 }
 
-/* Carousel Controls */
+/* Carousel controls */
 .carousel-prev,
 .carousel-next {
     position: absolute;
@@ -307,7 +311,7 @@ nav a:hover {
     background-color: #ed1c24;
 }
 
-/* Contact Section */
+/* Contact section */
 #contact {
     padding: 5px 40px 40px 40px;
     background-color: #595959;
@@ -357,6 +361,7 @@ nav a:hover {
     resize: vertical;
 }
 
+/* Contact Form CTA button */
 .contact-form button {
     padding: 10px 20px;
     font-size: 15px;
@@ -368,6 +373,7 @@ nav a:hover {
     color: white
 }
 
+/* Button hover effect */
 .contact-form button:hover {
     background-color: #c0392b;
 }
@@ -590,8 +596,9 @@ nav a:hover {
         height: 300px;
     }
 
-    .skill-text {
-        max-width: 70%;
+    /* Added so the carousel text block do not overlap with arrow */
+    .slide-text {
+        max-width: 90%;
         padding: 40px;
     }
 
