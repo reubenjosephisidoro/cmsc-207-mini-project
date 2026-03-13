@@ -1,14 +1,14 @@
 /* Register NightSans as a custom font */
 @font-face {
     font-family: 'NightSans';
-    src: url('fonts/NightSans-Medium.woff2') format('woff2');
+    src: url('fonts/Nightsans-Medium.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 /* Container */
 .container {
-    max-width: 1250px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -414,6 +414,7 @@ nav a:hover {
     padding: 0;
 }
 
+.contact-call a,
 .contact-chat a,
 .contact-social a {
     display: block;
