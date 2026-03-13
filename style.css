@@ -206,6 +206,7 @@ nav a:hover {
     color: white;
     font-size: 40px;
     margin-bottom: 30px;
+    margin-top: -10px;
 }
 
 /* Carousel wrapper */
@@ -235,11 +236,6 @@ nav a:hover {
     padding: 0;
     flex-shrink: 0;
 }
-
-/* Show only active slide */
-/* .carousel-slide.active {
-    display: flex;
-} */
 
 /* Text overlay on image */
 .slide-text {
@@ -327,6 +323,7 @@ nav a:hover {
 #contact h2 {
     font-size: 40px;
     margin-bottom: 10px;
+    margin-top: 4px;
 }
 
 #contact > p {
@@ -450,6 +447,7 @@ nav a:hover {
 #blog h2 {
     font-size: 40px;
     margin-bottom: 40px;
+    margin-top: 4px;
     color: #a63636;
 }
 
