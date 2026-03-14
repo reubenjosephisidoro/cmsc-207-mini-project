@@ -28,3 +28,8 @@ This project is a single-page, personal website built with **HTML**, **CSS**, an
 
 ## Live Demo
 [View the website](https://reubenjosephisidoro.github.io/cmsc-207-mini-project/)
+
+## Notes
+
+Some linked elements throughout the site, which includes some navigation menu items, "Read More" buttons, and social media icons, are currently placeholder links and do not point to live pages. These can be 
+updated as the site continues to develop.
